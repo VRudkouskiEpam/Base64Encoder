@@ -4,7 +4,7 @@ namespace Host.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class HealthCheck : ControllerBase
+    public class HealthCheckController : ControllerBase
     {
         [HttpGet]
         public IActionResult Get()

@@ -15,7 +15,6 @@ namespace Host.Components
             Random random = new();
             int delay = random.Next(MinDelayInSeconds * 1000, MaxDelayInSeconds * 1000);
             Task.Delay(delay, cancellationToken).Wait(cancellationToken);
-
             return Task.CompletedTask;
         }
     }

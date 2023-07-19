@@ -12,10 +12,7 @@ namespace Host.Components
         public string Encode(string data)
         {
             byte[] plainTextBytes = Encoding.UTF8.GetBytes(data);
-
-            string result = Convert.ToBase64String(plainTextBytes);
-
-            return result;
+            return Convert.ToBase64String(plainTextBytes);
         }
     }
 }
