@@ -1,0 +1,22 @@
+.centeredLayout {
+  min-height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentContainer {
+  min-width: 55%;
+}
+
+.btn {
+  margin: 0px 5px 15px 0px;
+}
+
+.encoderSpinner {
+  margin: auto;
+}
+
+.encoderCard {
+  min-height: 280px;
+}
