@@ -10,4 +10,7 @@ RUN apk add --no-cache gettext
 
 COPY auth.conf auth.htpasswd launch.sh ./
 
+RUN sed -i 's/\r$//' ./launch.sh  && \  
+        chmod +x ./launch.sh
+
 CMD ["./launch.sh"]
