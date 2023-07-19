@@ -14,7 +14,7 @@ namespace WebViews.Controllers
         private readonly ApplicationSettings _settings;
 
         /// <summary>
-        /// Constructs <see cref="ConfigurationController"/> instanse.
+        /// Constructs <see cref="ConfigurationController"/> instance.
         /// </summary>
         /// <param name="settings">An instance of <see cref="IOptions{ApplicationSettings}"/> object.</param>
         public ConfigurationController(IOptions<ApplicationSettings> settings)

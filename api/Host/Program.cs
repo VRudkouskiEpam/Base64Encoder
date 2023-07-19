@@ -26,9 +26,9 @@ app.MapControllers();
 
 app.MapHub<EncoderHub>("/hubs/encode");
 
-app.UseCors(builder =>
-    builder
-        .WithOrigins(app.Configuration.GetValue<string>("FrontendUrl"))
+app.UseCors(policyBuilder => 
+    policyBuilder
+        .WithOrigins(app.Configuration.GetValue<string>("FrontendUrl")!)
         .AllowAnyMethod()
         .AllowAnyHeader()
         .AllowCredentials());

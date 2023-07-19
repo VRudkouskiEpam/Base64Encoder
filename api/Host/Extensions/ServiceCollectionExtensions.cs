@@ -9,7 +9,7 @@ namespace Host.Extensions
     public static class ServiceCollectionExtensions
     {
         /// <summary>
-        /// Registers services dependensies.
+        /// Registers services dependencies.
         /// </summary>
         public static IServiceCollection AddServices(
              this IServiceCollection services)

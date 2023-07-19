@@ -34,8 +34,7 @@ docker run -d -p 44446:80 --name web oneinc-test-web
 cd..
 echo start auth
 cd %_authPath%
-docker build . -t oneinc-test-auth
-REM docker-compose build
+docker-compose build
 docker run -d -p 44445:80 --link web:web --name auth oneinc-test-auth
 
 :end

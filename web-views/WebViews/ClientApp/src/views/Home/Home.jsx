@@ -37,12 +37,6 @@ export default function Home() {
     }
   }, [connection]);
 
-  useEffect(() => {
-    if (connectionId) {
-      connection.invoke("Send", valueToEncode, connectionId);
-    }
-  }, [connectionId]);
-
   const runEncoding = (value) => {
     setValueToEncode(value);
     setEncodeResult("");
@@ -52,6 +46,7 @@ export default function Home() {
         .then(() => {
           connection.invoke("getconnectionid").then((data) => {
             setConnectionId(data);
+            connection.invoke("Send", value, data);
           });
         })
         .catch((e) => {

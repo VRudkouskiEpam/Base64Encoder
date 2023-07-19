@@ -6,8 +6,6 @@ ENV HTPASSWD='usr:$2y$05$5AQr.0.p2oO3vL6owgsYdOJOawnLZC5/eMctrPDD56gUQl6hcFMl2' 
 	
 WORKDIR /opt
 
-EXPOSE 80
-
 RUN apk add --no-cache gettext
 
 COPY auth.conf auth.htpasswd launch.sh ./

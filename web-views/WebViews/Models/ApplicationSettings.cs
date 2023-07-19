@@ -1,7 +1,7 @@
 ﻿namespace WebViews.Models
 {
     /// <summary>
-    /// Defines the options for application seetings.
+    /// Defines the options for application settings.
     /// </summary>
     public record class ApplicationSettings
     {

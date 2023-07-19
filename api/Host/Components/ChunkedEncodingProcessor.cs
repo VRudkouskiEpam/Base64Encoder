@@ -13,8 +13,8 @@ namespace Host.Components
         /// <summary>
         /// Constructs <see cref="ChunkedEncodingProcessor"/> instance.
         /// </summary>
-        /// <param name="encoder">An instance of <see cref="IEncoder"></param>
-        /// <param name="messageBuilder">An instance of <see cref="IProcessingSimulator">param>
+        /// <param name="encoder">An instance of <see cref="IEncoder"/></param>
+        /// <param name="messageBuilder">An instance of <see cref="IProcessingSimulator"/></param>
         public ChunkedEncodingProcessor(IEncoder encoder, IProcessingSimulator messageBuilder)
         {
             _encoder = encoder;
